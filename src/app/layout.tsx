@@ -1,4 +1,5 @@
 // app/layout.tsx
+import Navbar from "./components/Home/Navbar";
 import { Providers } from "./components/shared/Providers";
 import "./globals.css";
 
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );

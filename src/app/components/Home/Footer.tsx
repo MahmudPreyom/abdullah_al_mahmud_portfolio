@@ -11,17 +11,17 @@ const Footer = () => {
         Abdullah Al Mahmud
       </Link>
 
-      <ul className="flex flex-wrap justify-center gap-6 mb-8">
+      {/* <ul className="flex flex-wrap justify-center gap-6 mb-8">
         <li>
           <Link href="/" className="hover:text-primary transition">
             Home
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link href="/projects" className="hover:text-primary transition">
             Project
           </Link>
-        </li> */}
+        </li>
         <li>
           <Link href="/experience" className="hover:text-primary transition">
             Experience
@@ -32,7 +32,7 @@ const Footer = () => {
             Contact
           </Link>
         </li>
-      </ul>
+      </ul> */}
 
       <div className="flex justify-center gap-4 mb-6">
         <Link
