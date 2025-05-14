@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 import { Download, UserPlus } from "lucide-react";
-import profile from "../../../assets/Adobe Express - file (2).png";
+import profile from "../../../assets/Adobe Express - file (15).png";
 import middle from "../../../assets/middlepng.png";
 import { ThemeToggle } from "../shared/ThemeToggle";
 
@@ -14,7 +14,7 @@ const Banner = () => {
     <div className="banner-bg overflow-hidden relative transition-colors duration-300">
       <div className="container mx-auto">
         {/* Theme Toggle */}
-        <div className="flex justify-end md:justify-center p-5 md:p-0 mt-0 md:mt-20">
+        <div className="flex md:ml-40 md:justify-center p-5 md:p-0 mt-0 md:mt-20">
           <ThemeToggle />
         </div>
 
@@ -75,12 +75,13 @@ const Banner = () => {
           </div>
 
           {/* Right Column */}
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center"> */}
+          <div className="md:ml-auto flex justify-center">
             <Image
               src={profile}
               alt="Abdullah Al Mahmud"
               style={{ width: "auto", maxHeight: "630px" }}
-              className="md:ml-60"
+              className="md:ml-60 rounded-full"
               priority
             />
           </div>

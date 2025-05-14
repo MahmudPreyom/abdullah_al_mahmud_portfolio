@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Laptop, Code, Layers, MessageCircle } from "lucide-react";
 import about from "../../../assets/Remove background project.png";
+// import about from "../../../assets/Adobe Express - file (16).png";
 
 const cardData = [
   {
