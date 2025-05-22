@@ -1,6 +1,7 @@
 "use client";
 
 import { CheckCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -33,6 +34,22 @@ const services = [
   },
 ];
 
+const dropIn = {
+  hidden: {
+    opacity: 0,
+    y: -20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const Services = () => {
   return (
     <section className="container mx-auto py-16 px-6 text-foreground">
@@ -51,14 +68,22 @@ const Services = () => {
               <h3 className="text-lg font-semibold">{service.title}</h3>
             </div>
 
-            <ul className="mt-4 px-6 py-5 space-y-5 font-medium">
-              {service.features.map((feature, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <CheckCircle className="text-primary mt-1 w-5 h-5" />
-                  <p className="text-muted-foreground">{feature}</p>
-                </li>
-              ))}
-            </ul>
+            <motion.ul
+              // className="mt-4 px-6 py-5 space-y-5 font-medium"
+              variants={dropIn}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <ul className="mt-4 px-6 py-5 space-y-5 font-medium">
+                {service.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <CheckCircle className="text-primary mt-1 w-5 h-5" />
+                    <p className="text-muted-foreground">{feature}</p>
+                  </li>
+                ))}
+              </ul>
+            </motion.ul>
           </article>
         ))}
       </div>

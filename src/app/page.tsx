@@ -14,13 +14,13 @@ import ProjectsPage from "./projects/page";
 export default function Home() {
   return (
     <div>
-      <Banner />
-      <AboutPage />
-      <ExperiencePage />
-      <ServicesPage />
-      <ProjectsPage/>
-      <ContactPage />
-      <Footer />
+        <Banner />
+        <AboutPage />
+        <ExperiencePage />
+        <ServicesPage />
+        <ProjectsPage />
+        <ContactPage />
+        <Footer />
     </div>
   );
 }

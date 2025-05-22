@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
@@ -77,13 +77,20 @@ const Banner = () => {
           {/* Right Column */}
           {/* <div className="flex justify-center"> */}
           <div className="md:ml-auto flex justify-center">
-            <Image
-              src={profile}
-              alt="Abdullah Al Mahmud"
-              style={{ width: "auto", maxHeight: "630px" }}
-              className="md:ml-60 rounded-full"
-              priority
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="md:ml-60"
+            >
+              <Image
+                src={profile}
+                alt="Abdullah Al Mahmud"
+                style={{ width: "auto", maxHeight: "630px" }}
+                className="rounded-full"
+                priority
+              />
+            </motion.div>
           </div>
         </div>
       </div>
