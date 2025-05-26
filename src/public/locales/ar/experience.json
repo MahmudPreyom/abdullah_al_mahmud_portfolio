@@ -1,0 +1,28 @@
+{
+  "subtitle": "ماذا أعرف",
+  "sectionTitle": "خبرتي",
+  "frontendTitle": "تطوير الواجهة الأمامية",
+  "backendTitle": "تطوير الواجهة الخلفية",
+  "frontendSkills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Bootstrap",
+    "Tailwind",
+    "React",
+    "Next.js"
+  ],
+  "backendSkills": [
+    { "skill": "MongoDB", "level": "experienced" },
+    { "skill": "Mongoose", "level": "experienced" },
+    { "skill": "Typescript", "level": "experienced" },
+    { "skill": "Node.js", "level": "intermediate" },
+    { "skill": "NoSQL", "level": "intermediate" },
+    { "skill": "Express.js", "level": "experienced" }
+  ],
+  "levels": {
+    "experienced": "خبير",
+    "intermediate": "متوسط"
+  }
+}

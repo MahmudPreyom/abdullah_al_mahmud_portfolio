@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Globe } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -14,12 +15,25 @@ import { Button } from "@/components/ui/button";
 export const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const { resolvedTheme } = useTheme();
-  const currentLang = i18n.language;
-  const isDark = resolvedTheme === "dark";
+
+  // ✅ To avoid hydration mismatch
+  const [mounted, setMounted] = useState(false);
+  const [lang, setLang] = useState<string>("en");
+
+  useEffect(() => {
+    setMounted(true);
+    setLang(i18n.language);
+  }, [i18n.language]);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    setLang(lng);
   };
+
+  // ❌ Avoid rendering anything until component is mounted
+  if (!mounted) return null;
+
+  const isDark = resolvedTheme === "dark";
 
   return (
     <DropdownMenu>
@@ -45,7 +59,7 @@ export const LanguageSwitcher = () => {
                   : "bg-primary text-primary-foreground"
               }`}
           >
-            {currentLang === "en" ? "EN" : "BN"}
+            {lang === "en" ? "EN" : "BN"}
           </span>
         </Button>
       </DropdownMenuTrigger>

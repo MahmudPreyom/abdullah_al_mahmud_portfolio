@@ -7,10 +7,13 @@ import enNavbar from "./public/locales/en/navbar.json";
 import bnNavbar from "./public/locales/bn/navbar.json";
 import enCommon from "./public/locales/en/common.json";
 import bnCommon from "./public/locales/bn/common.json";
+// import arCommon from "./public/locales/ar/common.json";
 import enAbout from "./public/locales/en/about.json";
 import bnAbout from "./public/locales/bn/about.json";
+// import arAbout from "./public/locales/ar/about.json";
 import enExperience from "./public/locales/en/experience.json";
 import bnExperience from "./public/locales/bn/experience.json";
+// import arExperience from "./public/locales/ar/experience.json";
 import enServices from "./public/locales/en/services.json";
 import bnServices from "./public/locales/bn/services.json";
 import enProjects from "./public/locales/en/projects.json";
@@ -41,6 +44,11 @@ const resources = {
     contact: bnContact,
     footer: bnFooter,
   },
+  // ar: {
+  //   common: arCommon,
+  //   about: arAbout,
+  //   experience: arExperience,
+  // },
 };
 
 const options: InitOptions = {
