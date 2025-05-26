@@ -1,0 +1,40 @@
+{
+  "heading": "المشاريع",
+  "subheading": "أحدث أعمالي",
+  "projects": [
+    {
+      "title": "منصة تعلم الموسيقى",
+      "details": [
+        "1. هذا موقع ويب Full Stack يحتوي على ثلاثة أدوار: المشرف، المدرب، والطالب.",
+        "2. يمكن للمشرف تعيين الأدوار للمستخدمين أو إزالتها.",
+        "3. يمكن للمدرب إضافة دروس، والتي يجب أن يوافق عليها المشرف."
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | Tailwind CSS | DaisyUI | React-Router | Axios | JWT | Node.js"
+    },
+    {
+      "title": "صائد الوصفات",
+      "details": [
+        "1. يمكن للمستخدمين التسجيل باستخدام GitHub أو Google أو البريد الإلكتروني وكلمة المرور.",
+        "2. يتطلب الوصول إلى معظم الصفحات تسجيل الدخول.",
+        "3. يمكن للمستخدمين المسجلين عرض الطهاة ووصفاتهم."
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | React-Bootstrap | React-Router"
+    },
+    {
+      "title": "سوق سيارات الألعاب Toy Planet",
+      "details": [
+        "1. تسجيل الدخول باستخدام البريد الإلكتروني وكلمة المرور أو Google.",
+        "2. يمكن للمستخدمين تحديث بيانات ألعابهم.",
+        "3. يمكن للمستخدمين المسجلين عرض صفحات My Toys و All Toys."
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | Tailwind CSS | DaisyUI | React-Router"
+    }
+  ],
+  "buttons": {
+    "frontend": "الواجهة الأمامية",
+    "backend": "الواجهة الخلفية",
+    "liveDemo": "عرض مباشر",
+    "details": "التفاصيل",
+    "hideDetails": "إخفاء التفاصيل"
+  }
+}

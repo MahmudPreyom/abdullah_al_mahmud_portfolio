@@ -30,7 +30,6 @@ export const LanguageSwitcher = () => {
     setLang(lng);
   };
 
-  // ❌ Avoid rendering anything until component is mounted
   if (!mounted) return null;
 
   const isDark = resolvedTheme === "dark";
@@ -52,14 +51,13 @@ export const LanguageSwitcher = () => {
           <Globe className="w-5 h-5" />
           {/* Badge */}
           <span
-            className={`absolute -top-1 -right-1 text-[10px] font-bold px-1.5 py-0.5 rounded-full 
-              ${
-                isDark
-                  ? "bg-[#0ff] text-black shadow-[0_0_5px_#0ff]"
-                  : "bg-primary text-primary-foreground"
-              }`}
+            className={`absolute -top-1 -right-1 text-[10px] font-bold px-1.5 py-0.5 rounded-full ${
+              isDark
+                ? "bg-[#0ff] text-black shadow-[0_0_5px_#0ff]"
+                : "bg-primary text-primary-foreground"
+            }`}
           >
-            {lang === "en" ? "EN" : "BN"}
+            {lang === "en" ? "EN" : lang === "bn" ? "BN" : "AR"}
           </span>
         </Button>
       </DropdownMenuTrigger>
@@ -69,6 +67,9 @@ export const LanguageSwitcher = () => {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => changeLanguage("bn")}>
           বাংলা
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeLanguage("ar")}>
+          العربية
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
