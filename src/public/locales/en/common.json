@@ -1,0 +1,15 @@
+{
+  "greeting": "Hello, I am",
+  "name": "Abdullah Al Mahmud",
+  "description": "As a Full Stack Developer, I specialize in building modern,\nscalable web applications using the MERN stack. I have a strong\nfoundation in both front-end and back-end development, ensuring\nseamless user experiences and efficient performance. Passionate\nabout coding and problem-solving, I continuously explore new\ntechnologies to enhance my skills and deliver high-quality\nsolutions.",
+  "resume": "Resume",
+  "hireMe": "Hire Me",
+  "article": "A",
+  "typewriter": [
+    "Full Stack Web Developer",
+    "MERN Web Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Passionate for Coding"
+  ]
+}

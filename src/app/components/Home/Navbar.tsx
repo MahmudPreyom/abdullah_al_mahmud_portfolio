@@ -8,28 +8,30 @@ import { GiSkills } from "react-icons/gi";
 import { FaServicestack } from "react-icons/fa";
 import { PiUserBold } from "react-icons/pi";
 import { SiPolymerproject } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 type LinkItem = {
   href: string;
   icon: React.ReactNode;
-  label: string;
+  labelKey: string;
 };
 
 const Navbar = () => {
   const pathname = usePathname();
+  const { t } = useTranslation("navbar");
 
   const links: LinkItem[] = [
-    { href: "/", icon: <AiOutlineHome />, label: "Home" },
-    { href: "/about", icon: <PiUserBold />, label: "About" },
-    { href: "/services", icon: <FaServicestack />, label: "Service" },
-    { href: "/experience", icon: <GiSkills />, label: "Experience" },
-    { href: "/projects", icon: <SiPolymerproject />, label: "Projects" },
-    { href: "/contact", icon: <MdOutlineContacts />, label: "Contact" },
+    { href: "/", icon: <AiOutlineHome />, labelKey: "home" },
+    { href: "/about", icon: <PiUserBold />, labelKey: "about" },
+    { href: "/services", icon: <FaServicestack />, labelKey: "service" },
+    { href: "/experience", icon: <GiSkills />, labelKey: "experience" },
+    { href: "/projects", icon: <SiPolymerproject />, labelKey: "projects" },
+    { href: "/contact", icon: <MdOutlineContacts />, labelKey: "contact" },
   ];
 
   return (
     <nav className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-muted/80 backdrop-blur-md px-5 py-3 flex gap-2 rounded-full z-10 border border-border shadow-lg">
-      {links.map(({ href, icon, label }, index) => (
+      {links.map(({ href, icon, labelKey }, index) => (
         <div key={index} className="relative">
           <Link
             href={href}
@@ -43,7 +45,7 @@ const Navbar = () => {
           </Link>
           {pathname === href && (
             <span className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 bg-popover text-popover-foreground px-2 py-1 rounded-md text-sm shadow-md">
-              {label}
+              {t(labelKey)}
             </span>
           )}
         </div>

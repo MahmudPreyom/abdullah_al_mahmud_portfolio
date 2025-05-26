@@ -6,6 +6,7 @@ import { RiMailSendFill } from "react-icons/ri";
 import { MailCheck, MessageCircleMore, PhoneCall } from "lucide-react";
 import Swal from "sweetalert2";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 interface ContactOptionProps {
   icon: React.ReactNode;
@@ -16,6 +17,7 @@ interface ContactOptionProps {
 }
 
 const Contact = () => {
+  const { t } = useTranslation("contact");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -45,7 +47,7 @@ const Contact = () => {
           Swal.fire({
             position: "center",
             icon: "success",
-            title: "Your message has been sent",
+            title: t("success"),
             showConfirmButton: false,
             timer: 1500,
           });
@@ -63,8 +65,8 @@ const Contact = () => {
       className="py-16 bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-200"
     >
       <div className="text-center">
-        <h5 className="text-muted-foreground text-lg">Let’s Collaborate</h5>
-        <h2 className="text-4xl font-bold">Contact Me</h2>
+        <h5 className="text-muted-foreground text-lg">{t("subtitle")}</h5>
+        <h2 className="text-4xl font-bold">{t("title")}</h2>
       </div>
 
       <div className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 px-5">
@@ -74,21 +76,21 @@ const Contact = () => {
             title="Email"
             subtitle="preyom5076@gmail.com"
             link="mailto:preyom5076@gmail.com"
-            linkText="Send a message"
+            linkText={t("sendMessage")}
           />
           <ContactOption
             icon={<MessageCircleMore className="text-primary" />}
             title="Messenger"
             subtitle="Mahmud Preyom"
             link="https://m.me/mahmud.preyom"
-            linkText="Chat now"
+            linkText={t("chatNow")}
           />
           <ContactOption
             icon={<PhoneCall className="text-primary" />}
             title="WhatsApp"
             subtitle="(+880) 1580-367168"
             link="https://api.whatsapp.com/send?phone=+8801580367168"
-            linkText="Message now"
+            linkText={t("messageNow")}
           />
         </div>
 
@@ -101,7 +103,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Your Full Name"
+            placeholder={t("form.name")}
             required
             className="w-full p-3 bg-transparent border border-border rounded-2xl text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary"
           />
@@ -110,7 +112,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Your Email"
+            placeholder={t("form.email")}
             required
             className="w-full p-3 bg-transparent border border-border rounded-2xl text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary"
           />
@@ -119,7 +121,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             rows={6}
-            placeholder="Your Message"
+            placeholder={t("form.message")}
             required
             className="w-full p-3 bg-transparent border border-border rounded-2xl text-foreground placeholder-muted-foreground focus:ring-2 focus:ring-primary"
           ></textarea>
@@ -127,7 +129,7 @@ const Contact = () => {
             type="submit"
             className="w-full bg-primary text-primary-foreground py-3 rounded-md hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2"
           >
-            <RiMailSendFill className="text-lg" /> Send Message
+            <RiMailSendFill className="text-lg" /> {t("form.submit")}
           </button>
         </form>
       </div>

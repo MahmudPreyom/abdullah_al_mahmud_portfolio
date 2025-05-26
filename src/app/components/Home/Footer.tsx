@@ -1,38 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import { Github, Facebook, Youtube } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation("footer");
+
   return (
     <footer className="shadow-2xl pb-32 pt-20 text-center bg-muted text-muted-foreground">
       <Link
         href="/"
         className="text-2xl font-semibold mb-6 inline-block text-foreground"
       >
-        Abdullah Al Mahmud
+        {t("name")}
       </Link>
-
-      {/* <ul className="flex flex-wrap justify-center gap-6 mb-8">
-        <li>
-          <Link href="/" className="hover:text-primary transition">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="/projects" className="hover:text-primary transition">
-            Project
-          </Link>
-        </li>
-        <li>
-          <Link href="/experience" className="hover:text-primary transition">
-            Experience
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact" className="hover:text-primary transition">
-            Contact
-          </Link>
-        </li>
-      </ul> */}
 
       <div className="flex justify-center gap-4 mb-6">
         <Link
@@ -57,8 +39,7 @@ const Footer = () => {
 
       <div className="text-sm">
         <h5>
-          &copy; {new Date().getFullYear()} Abdullah Al Mahmud. All Rights
-          Reserved.
+          &copy; {new Date().getFullYear()} {t("name")}. {t("copyright")}
         </h5>
       </div>
     </footer>

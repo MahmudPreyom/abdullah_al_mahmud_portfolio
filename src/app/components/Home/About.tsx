@@ -1,32 +1,33 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Laptop, Code, Layers, MessageCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import about from "../../../assets/Remove background project.png";
-// import about from "../../../assets/Adobe Express - file (16).png";
-
-const cardData = [
-  {
-    icon: <Laptop className="w-8 h-8 text-primary mb-3" />,
-    title: "Interest",
-    desc: "For Advance Web Development",
-  },
-  {
-    icon: <Code className="w-8 h-8 text-primary mb-3" />,
-    title: "Explore",
-    desc: "Updated React Components",
-  },
-  {
-    icon: <Layers className="w-8 h-8 text-primary mb-3" />,
-    title: "Project",
-    desc: "5+ projects",
-  },
-];
 
 const About = () => {
+  const { t } = useTranslation("about");
+
+  const cardData = [
+    {
+      icon: <Laptop className="w-8 h-8 text-primary mb-3" />,
+      title: t("card1.title"),
+      desc: t("card1.desc"),
+    },
+    {
+      icon: <Code className="w-8 h-8 text-primary mb-3" />,
+      title: t("card2.title"),
+      desc: t("card2.desc"),
+    },
+    {
+      icon: <Layers className="w-8 h-8 text-primary mb-3" />,
+      title: t("card3.title"),
+      desc: t("card3.desc"),
+    },
+  ];
+
   return (
     <section className="py-20 container px-4 mx-auto transition-colors duration-300">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -40,7 +41,7 @@ const About = () => {
           >
             <Image
               src={about}
-              alt="About Image"
+              alt={t("about.imageAlt")}
               className="w-full max-h-[635px]"
               priority
             />
@@ -50,8 +51,8 @@ const About = () => {
         {/* Content */}
         <div>
           <div className="mb-10">
-            <h5 className="text-xl text-muted-foreground">Get To Know</h5>
-            <h2 className="text-3xl font-bold text-foreground">About Me</h2>
+            <h5 className="text-xl text-muted-foreground">{t("getToKnow")}</h5>
+            <h2 className="text-3xl font-bold text-foreground">{t("aboutMe")}</h2>
           </div>
 
           {/* Cards */}
@@ -73,17 +74,7 @@ const About = () => {
 
           {/* Description */}
           <p className="text-muted-foreground mb-8 text-lg">
-            Hi there! I am a MERN Stack Developer, FrontEnd and BackEnd
-            Developer, and my name is Abdullah Al Mahmud.I am from Feni,
-            Bangladesh. With regards to web development, I have a particular
-            passion for learning new things. I build web applications with the
-            use of HTML, CSS, JavaScript, ReactJS, Next.js, and many more
-            technologies. I also specialize in responsive and dynamic website
-            creation. My work as a backend developer involves technology such as
-            Node.js, Express.js, and MongoDB. For testing and deploying
-            applications, I utilize Postman, GitHub, Vercel, and other version
-            control tools. As a full-stack developer, I am scaling and securing
-            applications with TypeScript and CORS.
+            {t("description")}
           </p>
 
           {/* CTA */}
@@ -91,7 +82,7 @@ const About = () => {
             href="/contact"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition"
           >
-            Let's Talk <MessageCircle className="w-4 h-4" />
+            {t("letsTalk")} <MessageCircle className="w-4 h-4" />
           </Link>
         </div>
       </div>

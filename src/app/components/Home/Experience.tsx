@@ -17,26 +17,7 @@ import { TbBrandVite } from "react-icons/tb";
 import Marquee from "react-fast-marquee";
 import { BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
-
-const frontendSkills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "Bootstrap",
-  "Tailwind",
-  "React",
-  "Next.js",
-];
-
-const backendSkills = [
-  { skill: "MongoDB", level: "Experienced" },
-  { skill: "Mongoose", level: "Experienced" },
-  { skill: "Typescript", level: "Experienced" },
-  { skill: "Node.js", level: "Intermediate" },
-  { skill: "NoSQL", level: "Intermediate" },
-  { skill: "Express.js", level: "Experienced" },
-];
+import { useTranslation } from "react-i18next";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -48,8 +29,18 @@ const fadeInUp = {
 };
 
 const Experience = () => {
+  const { t } = useTranslation("experience");
+
+  const frontendSkills = t("frontendSkills", {
+    returnObjects: true,
+  }) as string[];
+
+  const backendSkills = t("backendSkills", {
+    returnObjects: true,
+  }) as { skill: string; level: string }[];
   return (
     <section className="py-12 text-center text-foreground">
+      {/* Section Titles */}
       <motion.h5
         className="text-muted-foreground text-lg"
         initial="hidden"
@@ -57,7 +48,7 @@ const Experience = () => {
         variants={fadeInUp}
         viewport={{ once: true }}
       >
-        What Skills I Have
+        {t("subtitle")}
       </motion.h5>
 
       <motion.h2
@@ -68,10 +59,10 @@ const Experience = () => {
         viewport={{ once: true }}
         custom={0.2}
       >
-        My Experience
+        {t("sectionTitle")}
       </motion.h2>
 
-      {/* Marquee with icons */}
+      {/* Marquee with Icons */}
       <Marquee className="my-8 text-primary" speed={60}>
         <FaReact className="text-5xl" />
         <TbBrandVite className="text-5xl mx-16" />
@@ -100,10 +91,10 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <h3 className="text-xl font-semibold mb-4 text-foreground">
-            Frontend Development
+            {t("frontendTitle")}
           </h3>
           <div className="grid grid-cols-2 gap-4">
-            {frontendSkills.map((skill, index) => (
+            {frontendSkills.map((skill: string, index: number) => (
               <motion.div
                 key={index}
                 className="flex items-center gap-3"
@@ -115,9 +106,11 @@ const Experience = () => {
               >
                 <BadgeCheck className="text-primary dark:text-yellow-400 w-5 h-5" />
                 <div className="text-start">
-                  <h4 className="text-sm font-medium text-foreground">{skill}</h4>
+                  <h4 className="text-sm font-medium text-foreground">
+                    {skill}
+                  </h4>
                   <small className="text-xs text-muted-foreground">
-                    Experienced
+                    {t("levels.experienced")}
                   </small>
                 </div>
               </motion.div>
@@ -134,7 +127,7 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <h3 className="text-xl font-semibold mb-4 text-foreground">
-            Backend Development
+            {t("backendTitle")}
           </h3>
           <div className="grid grid-cols-2 gap-4">
             {backendSkills.map(({ skill, level }, index) => (
@@ -149,8 +142,12 @@ const Experience = () => {
               >
                 <BadgeCheck className="text-primary dark:text-yellow-400 w-5 h-5" />
                 <div className="text-start">
-                  <h4 className="text-sm font-medium text-foreground">{skill}</h4>
-                  <small className="text-xs text-muted-foreground">{level}</small>
+                  <h4 className="text-sm font-medium text-foreground">
+                    {skill}
+                  </h4>
+                  <small className="text-xs text-muted-foreground">
+                    {t(`levels.${level}`)}
+                  </small>
                 </div>
               </motion.div>
             ))}

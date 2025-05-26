@@ -1,0 +1,28 @@
+{
+  "subtitle": "What Skills I Have",
+  "sectionTitle": "My Experience",
+  "frontendTitle": "Frontend Development",
+  "backendTitle": "Backend Development",
+  "frontendSkills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Bootstrap",
+    "Tailwind",
+    "React",
+    "Next.js"
+  ],
+  "backendSkills": [
+    { "skill": "MongoDB", "level": "experienced" },
+    { "skill": "Mongoose", "level": "experienced" },
+    { "skill": "Typescript", "level": "experienced" },
+    { "skill": "Node.js", "level": "intermediate" },
+    { "skill": "NoSQL", "level": "intermediate" },
+    { "skill": "Express.js", "level": "experienced" }
+  ],
+  "levels": {
+    "experienced": "Experienced",
+    "intermediate": "Intermediate"
+  }
+}

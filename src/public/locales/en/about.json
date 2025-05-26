@@ -1,0 +1,19 @@
+{
+  "getToKnow": "Get To Know",
+  "aboutMe": "About Me",
+  "imageAlt": "About Image",
+  "card1": {
+    "title": "Interest",
+    "desc": "For Advance Web Development"
+  },
+  "card2": {
+    "title": "Explore",
+    "desc": "Updated React Components"
+  },
+  "card3": {
+    "title": "Project",
+    "desc": "5+ projects"
+  },
+  "description": "Hi there! I am a MERN Stack Developer, FrontEnd and BackEnd Developer, and my name is Abdullah Al Mahmud. I am from Feni, Bangladesh. With regards to web development, I have a particular passion for learning new things. I build web applications with the use of HTML, CSS, JavaScript, ReactJS, Next.js, and many more technologies. I also specialize in responsive and dynamic website creation. My work as a backend developer involves technology such as Node.js, Express.js, and MongoDB. For testing and deploying applications, I utilize Postman, GitHub, Vercel, and other version control tools. As a full-stack developer, I am scaling and securing applications with TypeScript and CORS.",
+  "letsTalk": "Let's Talk"
+}

@@ -1,0 +1,40 @@
+{
+  "heading": "প্রজেক্টসমূহ",
+  "subheading": "আমার সাম্প্রতিক কাজ",
+  "projects": [
+    {
+      "title": "সঙ্গীত শেখার প্ল্যাটফর্ম",
+      "details": [
+        "১। এটি একটি ফুল স্ট্যাক ওয়েবসাইট যেখানে Admin, Instructor এবং Student - এই তিনটি রোল আছে।",
+        "২। Admin ইউজারদের রোল দিতে ও রিমুভ করতে পারে।",
+        "৩। Instructor ক্লাস যোগ করতে পারে, যা Admin অনুমোদন করবে।"
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | Tailwind CSS | DaisyUI | React-Router | Axios | JWT | Node.js"
+    },
+    {
+      "title": "রেসিপি হান্টার",
+      "details": [
+        "১। ইউজাররা GitHub, Google অথবা ইমেইল-পাসওয়ার্ড দিয়ে সাইন আপ করতে পারে।",
+        "২। অধিকাংশ পেজ অ্যাক্সেস করতে অথেনটিকেশন প্রয়োজন।",
+        "৩। লগইন করা ইউজাররা শেফ এবং তাদের রেসিপি দেখতে পারে।"
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | React-Bootstrap | React-Router"
+    },
+    {
+      "title": "টয় প্ল্যানেট কার মার্কেট",
+      "details": [
+        "১। লগইনের জন্য Email-Password বা Google প্রয়োজন।",
+        "২। ইউজাররা তাদের টয় ডেটা আপডেট করতে পারে।",
+        "৩। লগইন ইউজাররা My Toys ও All Toys পেজ দেখতে পারে।"
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | Tailwind CSS | DaisyUI | React-Router"
+    }
+  ],
+  "buttons": {
+    "frontend": "ফ্রন্টএন্ড",
+    "backend": "ব্যাকএন্ড",
+    "liveDemo": "লাইভ ডেমো",
+    "details": "বিস্তারিত",
+    "hideDetails": "বিস্তারিত লুকান"
+  }
+}

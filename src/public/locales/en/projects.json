@@ -1,0 +1,40 @@
+{
+  "heading": "Projects",
+  "subheading": "My Recent Work",
+  "projects": [
+    {
+      "title": "Music Instruments Learning",
+      "details": [
+        "1. This is a Full Stack Website with three roles: Admin, Instructor, and Student.",
+        "2. Admin can assign roles and remove users.",
+        "3. Instructors can add classes, which need admin approval."
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | Tailwind CSS | DaisyUI | React-Router | Axios | JWT | Node.js"
+    },
+    {
+      "title": "Chef Recipe Hunter",
+      "details": [
+        "1. Users can sign up via GitHub, Google, or Email-Password.",
+        "2. Authentication required for most pages.",
+        "3. Logged-in users can view chefs and their recipes."
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | React-Bootstrap | React-Router"
+    },
+    {
+      "title": "Toy Planet Car Market",
+      "details": [
+        "1. Authentication required (Email-Password, Google).",
+        "2. Users can update toy data.",
+        "3. Logged-in users can access My Toys and All Toys pages."
+      ],
+      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | Tailwind CSS | DaisyUI | React-Router"
+    }
+  ],
+  "buttons": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "liveDemo": "Live Demo",
+    "details": "Details",
+    "hideDetails": "Hide Details"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "subtitle": "আমি কী কী জানি",
+  "sectionTitle": "আমার অভিজ্ঞতা",
+  "frontendTitle": "ফ্রন্টএন্ড ডেভেলপমেন্ট",
+  "backendTitle": "ব্যাকএন্ড ডেভেলপমেন্ট",
+  "frontendSkills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Bootstrap",
+    "Tailwind",
+    "React",
+    "Next.js"
+  ],
+  "backendSkills": [
+    { "skill": "MongoDB", "level": "experienced" },
+    { "skill": "Mongoose", "level": "experienced" },
+    { "skill": "Typescript", "level": "experienced" },
+    { "skill": "Node.js", "level": "intermediate" },
+    { "skill": "NoSQL", "level": "intermediate" },
+    { "skill": "Express.js", "level": "experienced" }
+  ],
+  "levels": {
+    "experienced": "দক্ষ",
+    "intermediate": "মধ্যম"
+  }
+}
