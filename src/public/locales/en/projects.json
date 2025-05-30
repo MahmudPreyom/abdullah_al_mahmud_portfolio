@@ -1,40 +1,75 @@
 {
   "heading": "Projects",
   "subheading": "My Recent Work",
-  "projects": [
-    {
-      "title": "Music Instruments Learning",
-      "details": [
-        "1. This is a Full Stack Website with three roles: Admin, Instructor, and Student.",
-        "2. Admin can assign roles and remove users.",
-        "3. Instructors can add classes, which need admin approval."
-      ],
-      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | Tailwind CSS | DaisyUI | React-Router | Axios | JWT | Node.js"
-    },
-    {
-      "title": "Chef Recipe Hunter",
-      "details": [
-        "1. Users can sign up via GitHub, Google, or Email-Password.",
-        "2. Authentication required for most pages.",
-        "3. Logged-in users can view chefs and their recipes."
-      ],
-      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | React-Bootstrap | React-Router"
-    },
-    {
-      "title": "Toy Planet Car Market",
-      "details": [
-        "1. Authentication required (Email-Password, Google).",
-        "2. Users can update toy data.",
-        "3. Logged-in users can access My Toys and All Toys pages."
-      ],
-      "technologies": "VS Code | Firebase | MongoDB | Vercel | GitHub | Tailwind CSS | DaisyUI | React-Router"
-    }
-  ],
+  "tabs": {
+    "team": "Team Projects",
+    "personal": "Personal Projects"
+  },
   "buttons": {
     "frontend": "Frontend",
     "backend": "Backend",
     "liveDemo": "Live Demo",
     "details": "Details",
     "hideDetails": "Hide Details"
+  },
+  "medicineShop": {
+    "title": "Medicine Shop",
+    "technologies": "NextJS | Tailwind | ShadcnUI | MongoDB | Mongoose | JWT | Vercel | Nodejs | ExpressJS",
+    "date": "Started: May 18, 2025 - Finished: May 25, 2025",
+    "details": [
+      "1. A full-stack website where admin can add medicines and users can order following specific rules.",
+      "2. Admin can perform CRUD operations on users and orders. Users can also manage their orders.",
+      "3. ShurjoPay payment gateway is implemented with proper payment verification."
+    ]
+  },
+  "bookShop": {
+    "title": "Book Shop",
+    "technologies": "Vite | Tailwind | ShadcnUI | MongoDB | Mongoose | JWT | Vercel | Nodejs | ExpressJS",
+    "date": "Started: May 6, 2025 - Finished: May 12, 2025",
+    "details": [
+      "1. A full-stack website where users can order books.",
+      "2. Orders can be placed directly from the book details page.",
+      "3. Ordered books appear in the 'My Orders' page and can be removed anytime."
+    ]
+  },
+  "mediMart": {
+    "title": "MediMart",
+    "technologies": "NextJS | Tailwind | ShadcnUI | MongoDB | Mongoose | JWT | Vercel | Nodejs | ExpressJS",
+    "date": "Started: February 28, 2025 - Finished: March 12, 2025",
+    "details": [
+      "1. Users can register/login securely with JWT.",
+      "2. Admin can manage orders and inventory.",
+      "3. Users can add medicines to cart and checkout."
+    ]
+  },
+  "bicycleMart": {
+    "title": "Bicycle Store",
+    "technologies": "Vite | Tailwind | ShadcnUI | MongoDB | Mongoose | JWT | Vercel | Nodejs | ExpressJS",
+    "date": "Started: January 24, 2025 - Finished: January 31, 2025",
+    "details": [
+      "1. Users can register/login securely with JWT.",
+      "2. Admin can manage orders and inventory.",
+      "3. Users can add Bicycle to cart and checkout."
+    ]
+  },
+  "healthyFood": {
+    "title": "JEZ SALAD",
+    "technologies": "React | Tailwind CSS | DaisyUI | Swiper | Recharts | React Counter",
+    "date": "Started: September 5, 2024 - Finished: September 7, 2024",
+    "details": [
+      "1. Responsive Design: Built with mobile-first responsiveness using Tailwind CSS to ensure seamless experience across devices.",
+      "2. Modern UI: Clean and attractive layout focusing on healthy lifestyle aesthetics, using fresh color schemes and intuitive navigation.",
+      "3. Frontend Focus: Purely frontend project developed with HTML, CSS, and JavaScript (or your chosen stack), emphasizing layout structure, animations, and user interface components."
+    ]
+  },
+  "furniture": {
+    "title": "Vintage Furniture",
+    "technologies": "React | Tailwind CSS | DaisyUI | Swiper | React Dom",
+    "date": "Started: August 30, 2024 - Finished: September 4, 2024",
+    "details": [
+      "1. Classic Aesthetic Design: Designed with elegant, timeless styles and warm color palettes to reflect the vintage furniture theme.",
+      "2. Fully Responsive Layout: Optimized for all screen sizes using Tailwind CSS, ensuring accessibility and usability on mobile, tablet, and desktop.",
+      "3. Frontend-Only Build: Focused entirely on frontend development using HTML, CSS, and JavaScript (or your stack), showcasing layout design and component structure."
+    ]
   }
 }
