@@ -5,6 +5,7 @@ import { Providers } from "./components/shared/Providers";
 import "./globals.css";
 // import i18n from "@/i18n";
 import I18nProviderWrapper from "./components/shared/I18nProviderWrapper";
+import ScrollProgressBar from "./components/shared/ScrollProgressBar";
 
 export const metadata = {
   title: "Abdullah Al Mahmud",
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <I18nProviderWrapper>
+            <ScrollProgressBar />
             <Navbar />
             {children}
           </I18nProviderWrapper>

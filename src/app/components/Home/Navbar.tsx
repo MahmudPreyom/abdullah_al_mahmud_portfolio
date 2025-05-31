@@ -59,11 +59,9 @@ const Navbar = () => {
   const handleClick = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
-      isClickScrolling.current = true; // lock scroll detection
-      setActiveSection(id); // immediately highlight clicked item
+      isClickScrolling.current = true;
+      setActiveSection(id);
       el.scrollIntoView({ behavior: "smooth", block: "start" });
-
-      // Unlock after scroll finishes (~700ms is enough for smooth scroll)
       setTimeout(() => {
         isClickScrolling.current = false;
       }, 800);
