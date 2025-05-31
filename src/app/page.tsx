@@ -14,13 +14,15 @@ import ProjectsPage from "./projects/page";
 export default function Home() {
   return (
     <div>
+      <section id="banner" className="min-h-screen">
         <Banner />
-        <AboutPage />
-        <ExperiencePage />
-        <ServicesPage />
-        <ProjectsPage />
-        <ContactPage />
-        <Footer />
+      </section>
+      <AboutPage />
+      <ExperiencePage />
+      <ServicesPage />
+      <ProjectsPage />
+      <ContactPage />
+      <Footer />
     </div>
   );
 }

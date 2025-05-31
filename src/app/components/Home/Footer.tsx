@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Github, Facebook, Youtube } from "lucide-react";
 import { useTranslation } from "react-i18next";
+// import TawkToWidget from "./TawkToWidget";
 
 const Footer = () => {
   const { t } = useTranslation("footer");
@@ -35,6 +36,7 @@ const Footer = () => {
         >
           <Youtube className="w-6 h-6 text-red-600" />
         </Link>
+        {/* <TawkToWidget/> */}
       </div>
 
       <div className="text-sm">

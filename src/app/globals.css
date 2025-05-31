@@ -127,6 +127,9 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* .banner-bg {
   background-image: url("https://i.ibb.co.com/6RSXZRzG/Clip-path-group.png");
   background-repeat: no-repeat;

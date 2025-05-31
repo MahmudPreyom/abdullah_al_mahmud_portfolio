@@ -3,7 +3,7 @@ import Services from "../components/Home/Services";
 
 const ServicesPage = () => {
   return (
-    <div>
+    <div id="services" className="min-h-screen">
       <Services />
     </div>
   );

@@ -3,7 +3,7 @@ import About from "../components/Home/About";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div id="about" className="min-h-screen">
       <About />
     </div>
   );
