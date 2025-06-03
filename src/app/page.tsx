@@ -14,7 +14,8 @@ import ProjectsPage from "./projects/page";
 export default function Home() {
   return (
     <div>
-      <section id="banner" className="min-h-screen">
+      {/* <section id="banner" className="min-h-screen"> */}
+      <section id="banner">
         <Banner />
       </section>
       <AboutPage />

@@ -3,7 +3,8 @@ import Experience from "../components/Home/Experience";
 
 const ExperiencePage = () => {
   return (
-    <div id="experience" className="min-h-screen scroll-mt-0 md:scroll-mt-20">
+    // <div id="experience" className="min-h-screen">
+    <div id="experience">
       <Experience />
     </div>
   );
