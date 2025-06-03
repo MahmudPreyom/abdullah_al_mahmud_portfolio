@@ -55,7 +55,8 @@ const Banner = () => {
 
             <div className="flex gap-3 mt-8">
               <Link
-                href="https://drive.google.com/file/d/1shJnX_qSC94UeeBa6WNrajBbjg5DRrxZ/view?usp=sharing"
+                // href="https://drive.google.com/file/d/1shJnX_qSC94UeeBa6WNrajBbjg5DRrxZ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1UhNTHlBDLPfAvST4uLTFDeht7bKtXHay/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground py-2 px-6 rounded-lg hover:bg-primary/90 transition flex items-center gap-2"
