@@ -64,7 +64,7 @@ const Banner = () => {
                 <Download className="w-4 h-4" /> {t("resume")}
               </Link>
               <Link
-                href="/contact"
+                href="#contact"
                 className="bg-primary text-primary-foreground py-2 px-6 rounded-lg hover:bg-primary/90 transition flex items-center gap-2"
               >
                 <UserPlus className="w-4 h-4" /> {t("hireMe")}
