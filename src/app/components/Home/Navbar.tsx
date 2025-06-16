@@ -49,7 +49,7 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // initial trigger
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
