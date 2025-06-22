@@ -21,6 +21,9 @@ import arServices from "./public/locales/ar/services.json";
 import enProjects from "./public/locales/en/projects.json";
 import bnProjects from "./public/locales/bn/projects.json";
 import arProjects from "./public/locales/ar/projects.json";
+import enGallery from "./public/locales/en/gallery.json";
+import bnGallery from "./public/locales/bn/gallery.json";
+import arGallery from "./public/locales/ar/gallery.json";
 import enContact from "./public/locales/en/contact.json";
 import bnContact from "./public/locales/bn/contact.json";
 import arContact from "./public/locales/ar/contact.json";
@@ -36,6 +39,7 @@ const resources = {
     experience: enExperience,
     services: enServices,
     projects: enProjects,
+    gallery: enGallery,
     contact: enContact,
     footer: enFooter,
   },
@@ -46,6 +50,7 @@ const resources = {
     experience: bnExperience,
     services: bnServices,
     projects: bnProjects,
+    gallery: bnGallery,
     contact: bnContact,
     footer: bnFooter,
   },
@@ -56,6 +61,7 @@ const resources = {
     experience: arExperience,
     services: arServices,
     projects: arProjects,
+    gallery: arGallery,
     contact: arContact,
     footer: arFooter,
   },
@@ -72,6 +78,7 @@ const options: InitOptions = {
     "experience",
     "services",
     "projects",
+    "gallery",
     "contact",
     "footer",
   ],

@@ -52,7 +52,7 @@ const Experience = () => {
       </motion.h5>
 
       <motion.h2
-        className="text-3xl font-bold"
+        className="text-4xl font-bold"
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}

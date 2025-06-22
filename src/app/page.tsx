@@ -10,6 +10,7 @@ import ContactPage from "./contact/page";
 import ExperiencePage from "./experience/page";
 import ServicesPage from "./services/page";
 import ProjectsPage from "./projects/page";
+import GalleryPage from "./gallery/page";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <ExperiencePage />
       <ServicesPage />
       <ProjectsPage />
+      <GalleryPage />
       <ContactPage />
       <Footer />
     </div>

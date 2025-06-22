@@ -52,7 +52,7 @@ const About = () => {
         <div>
           <div className="mb-10">
             <h5 className="text-xl text-muted-foreground">{t("getToKnow")}</h5>
-            <h2 className="text-3xl font-bold text-foreground">{t("aboutMe")}</h2>
+            <h2 className="text-4xl font-bold text-foreground">{t("aboutMe")}</h2>
           </div>
 
           {/* Cards */}

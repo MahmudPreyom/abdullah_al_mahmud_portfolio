@@ -241,7 +241,7 @@ const Projects = () => {
   return (
     <section className="container mx-auto py-10 px-2 md:px-0 bg-background text-foreground">
       <h5 className="text-center text-muted-foreground">{t("subheading")}</h5>
-      <h2 className="text-center text-2xl font-bold mb-6">{t("heading")}</h2>
+      <h2 className="text-center text-4xl font-bold mb-6">{t("heading")}</h2>
 
       <Tabs defaultValue="personal" className="w-full">
         <TabsList className="container mx-auto flex justify-center gap-3">
