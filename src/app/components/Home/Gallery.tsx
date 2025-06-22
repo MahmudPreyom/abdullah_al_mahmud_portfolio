@@ -46,7 +46,7 @@ export default function Gallery() {
       <h5 className="text-center text-lg text-muted-foreground">
         {t('subtitle')}
       </h5>
-      <h2 className="text-center text-4xl mt-2 font-bold md:mb-28 mb-24">{t('title')}</h2>
+      <h2 className="text-center text-4xl mt-1 font-bold md:mb-28 mb-16">{t('title')}</h2>
     <div className="wrapper">
       <div className="scene">
         <div className="carousel keen-slider" ref={sliderRef}>
