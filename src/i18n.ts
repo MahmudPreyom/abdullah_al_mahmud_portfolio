@@ -12,6 +12,9 @@ import arCommon from "./public/locales/ar/common.json";
 import enAbout from "./public/locales/en/about.json";
 import bnAbout from "./public/locales/bn/about.json";
 import arAbout from "./public/locales/ar/about.json";
+import enAchievements from "./public/locales/en/achievements.json";
+import bnAchievements from "./public/locales/bn/achievements.json";
+import arAchievements from "./public/locales/ar/achievements.json";
 import enExperience from "./public/locales/en/experience.json";
 import bnExperience from "./public/locales/bn/experience.json";
 import arExperience from "./public/locales/ar/experience.json";
@@ -36,6 +39,7 @@ const resources = {
     navbar: enNavbar,
     common: enCommon,
     about: enAbout,
+    achievements: enAchievements,
     experience: enExperience,
     services: enServices,
     projects: enProjects,
@@ -47,6 +51,7 @@ const resources = {
     navbar: bnNavbar,
     common: bnCommon,
     about: bnAbout,
+    achievements: bnAchievements,
     experience: bnExperience,
     services: bnServices,
     projects: bnProjects,
@@ -58,6 +63,7 @@ const resources = {
     // navbar: arNavbar,
     common: arCommon,
     about: arAbout,
+    achievements: arAchievements,
     experience: arExperience,
     services: arServices,
     projects: arProjects,
@@ -75,6 +81,7 @@ const options: InitOptions = {
     "navbar",
     "common",
     "about",
+    "achievements",
     "experience",
     "services",
     "projects",

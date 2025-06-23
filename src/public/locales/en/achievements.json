@@ -1,0 +1,18 @@
+{
+  "proof": "Proof of Passion and Performance",
+  "title": "My Achievements",
+  "achievements": [
+    {
+      "title": "Complete Web Development",
+      "text": "This was my first certificate, which I earned in October 2023 from the Programming Hero Level-1 course. It marked the end of a challenging six-month journey, especially as someone from a non-CSE background starting out in programming. Despite facing many difficulties, I didn’t give up and stayed committed to completing the course. This certificate stands as proof of my determination and the effort I put into finishing the course on time."
+    },
+    {
+      "title": "Recommendation Letter",
+      "text": "After completing the Complete Web Development Course (Level-1), I got the opportunity to participate in a team project. We formed a team of five members, and our course mentors guided us throughout the project. They conducted official scrum meetings twice a day—once in the morning and once in the evening—via Google Meet to check our progress and provide feedback. Following their guidance closely, we successfully completed the team project on time (about 2 months). As a result, I was awarded this recommendation letter."
+    },
+    {
+      "title": "Next Level Web Development",
+      "text": "After completing the team project, I applied to many jobs. Unfortunately, my laptop was very slow, and I couldn’t work efficiently. This led me to take a two-year break from programming. Later, I decided to start again with a fresh mindset. I built a new PC and, since I already had some basic knowledge of web development, I wanted to advance my skills. That’s when I enrolled in the Next Level Web Development (Level-2) course by Programming Hero. After a two-month break, I began the course. It offered two learning paths: SQL and NoSQL. To complete the course on time, I chose the NoSQL path. I followed the course consistently from November 2024 to May 2025 and successfully completed it. This certificate is proof of that achievement."
+    }
+  ]
+}
