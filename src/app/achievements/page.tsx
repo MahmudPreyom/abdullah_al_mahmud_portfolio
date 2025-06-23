@@ -2,7 +2,7 @@ import Achievements from "../components/Home/Achievements";
 
 const AchievementsPage = () => {
   return (
-    <div>
+    <div id="achievements">
       <Achievements />
     </div>
   );
