@@ -12,6 +12,8 @@ import g6 from "../../../assets/gallery/IMG20220519121059-01.jpeg"
 import g7 from "../../../assets/gallery/gi2.jpg"
 import g8 from "../../../assets/gallery/gti1.jpg"
 import { useTranslation } from "react-i18next";
+import { Typewriter } from "react-simple-typewriter";
+import i18n from "@/i18n";
 
 const carousel: KeenSliderPlugin = (slider) => {
   const z = 300
@@ -47,6 +49,7 @@ export default function Gallery() {
         {t('subtitle')}
       </h5>
       <h2 className="text-center text-4xl mt-1 font-bold md:mb-28 mb-16">{t('title')}</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div className="wrapper">
       <div className="scene">
         <div className="carousel keen-slider" ref={sliderRef}>
@@ -60,6 +63,19 @@ export default function Gallery() {
           <div className="carousel__cell number-slide5"><Image src={g5} alt="g5"></Image></div>
         </div>
       </div>
+    </div>
+    <div className="text-muted-foreground leading-relaxed text mt-8 md:mt-0 md:text-base">
+      <Typewriter
+      key={i18n.language}
+      words={[t("description")]}
+      cursor
+      loop={1}
+      typeSpeed={10}
+      deleteSpeed={50}
+      delaySpeed={500}
+      />
+    {}
+  </div>
     </div>
     </section>
   )

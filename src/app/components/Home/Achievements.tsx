@@ -20,7 +20,7 @@ type Achievement = {
 
 export default function Achievements() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const { t } = useTranslation("achievements");
+  const { t, i18n } = useTranslation("achievements");
 
   const images = [a1, a2, a3];
   const links = [
@@ -67,7 +67,7 @@ export default function Achievements() {
           {/* Title with typewriter effect */}
           <h3 className="text-2xl md:text-3xl font-bold italic text-primary">
             <Typewriter
-              key={activeIndex}
+              key={`${activeIndex}-${i18n.language}`}
               words={[achievements[activeIndex]?.title || ""]}
               cursor
               loop={1}
