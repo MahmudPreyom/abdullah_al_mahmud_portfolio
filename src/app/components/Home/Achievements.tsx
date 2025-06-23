@@ -65,7 +65,7 @@ export default function Achievements() {
         {/* Text Area */}
         <div className="flex flex-col justify-center space-y-3">
           {/* Title with typewriter effect */}
-          <h3 className="text-2xl md:text-5xl font-bold italic text-primary">
+          <h3 className="text-2xl md:text-3xl font-bold italic text-primary">
             <Typewriter
               key={activeIndex}
               words={[achievements[activeIndex]?.title || ""]}
