@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
