@@ -1,5 +1,7 @@
 "use client";
-import { useState } from "react";
+
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -33,8 +35,59 @@ export default function Achievements() {
     returnObjects: true,
   }) as Achievement[];
 
+  const achievementRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const mm = gsap.matchMedia();
+
+      mm.add("(min-width: 768px)", () => {
+        gsap.from(".achieve-swiper", {
+          opacity: 0,
+          x: -60,
+          scale: 0.9,
+          duration: 1.2,
+          ease: "power3.out",
+        });
+
+        gsap.from(".achieve-text", {
+          opacity: 0,
+          x: 60,
+          duration: 1,
+          delay: 0.3,
+          ease: "power2.out",
+        });
+      });
+
+      mm.add("(max-width: 767px)", () => {
+        gsap.from(".achieve-swiper", {
+          opacity: 0,
+          y: 40,
+          scale: 0.95,
+          duration: 1,
+          ease: "power2.out",
+        });
+
+        gsap.from(".achieve-text", {
+          opacity: 0,
+          y: 30,
+          duration: 0.9,
+          delay: 0.2,
+          ease: "power2.out",
+        });
+      });
+
+      return () => mm.revert();
+    }, achievementRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="container mx-auto py-16 px-4 text-foreground">
+    <section
+      ref={achievementRef}
+      className="container mx-auto py-16 px-4 text-foreground"
+    >
       <h5 className="text-center text-lg text-muted-foreground">
         {t("proof") || "Proof of Passion and Performance"}
       </h5>
@@ -44,7 +97,7 @@ export default function Achievements() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Swiper Carousel */}
-        <div className="flex justify-center">
+        <div className="flex justify-center achieve-swiper">
           <Swiper
             effect="cards"
             grabCursor={true}
@@ -63,8 +116,7 @@ export default function Achievements() {
         </div>
 
         {/* Text Area */}
-        <div className="flex flex-col justify-center space-y-3">
-          {/* Title with typewriter effect */}
+        <div className="flex flex-col justify-center space-y-3 achieve-text">
           <h3 className="text-2xl md:text-3xl font-bold italic text-primary">
             <Typewriter
               key={`${activeIndex}-${i18n.language}`}
@@ -77,7 +129,6 @@ export default function Achievements() {
             />
           </h3>
 
-          {/* Description */}
           <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
             {achievements[activeIndex]?.text}
           </p>

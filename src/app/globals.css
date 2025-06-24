@@ -161,12 +161,21 @@ html {
   pointer-events: none;
 }
 
+/* === Perspective for GSAP 3D Animation in Banner === */
 .banner-bg {
   background-image: url("https://i.ibb.co.com/6RSXZRzG/Clip-path-group.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   top: 0;
+
+  /* ✅ Add these two lines for 3D perspective */
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.banner-bg * {
+  transform-style: preserve-3d;
 }
 
 @layer base {
