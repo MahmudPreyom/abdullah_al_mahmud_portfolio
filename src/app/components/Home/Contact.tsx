@@ -96,7 +96,7 @@ const Contact = () => {
 
         <form
           onSubmit={sendEmail}
-          className="flex flex-col gap-4 px-8 py-10 rounded-3xl shadow-2xl bg-muted space-y-4"
+          className="flex flex-col gap-4 px-8 py-10 rounded-3xl shadow-md bg-muted space-y-4"
         >
           <input
             type="text"
@@ -144,7 +144,7 @@ const ContactOption: React.FC<ContactOptionProps> = ({
   link,
   linkText,
 }) => (
-  <div className="p-5 rounded-2xl shadow-2xl text-center flex flex-col items-center gap-2 transition-transform transform hover:scale-105 bg-muted">
+  <div className="p-5 rounded-2xl shadow-md text-center flex flex-col items-center gap-2 transition-transform transform hover:scale-105 bg-muted">
     <div>{icon}</div>
     <h4 className="text-lg font-semibold">{title}</h4>
     <h5 className="text-muted-foreground">{subtitle}</h5>
