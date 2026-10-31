@@ -10,6 +10,7 @@ import { VscLiveShare } from "react-icons/vsc";
 import { TbListDetails } from "react-icons/tb";
 import { Users, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
+// @ts-expect-error Keen Slider provides CSS without TypeScript declarations.
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
@@ -20,14 +21,12 @@ const TeamProjects = [
     backend: "https://github.com/Asif419/medicine-shop-server",
     liveDemo: "https://medicine-shop-client.vercel.app/",
     imageSrcs: [
-      "https://i.ibb.co/MkTwCJDc/Screenshot-2025-05-28-200152.png",
-      "https://i.ibb.co/qTPJ5d5/Screenshot-2025-05-28-200219.png",
-      "https://i.ibb.co/mCpjG67P/Screenshot-2025-05-28-200245.png",
-      "https://i.ibb.co/xSxzcBCy/Screenshot-2025-05-28-200306.png",
-      "https://i.ibb.co/KzwTcpb5/Screenshot-2025-05-28-200352.png",
-      "https://i.ibb.co/5gQ9XNcL/Screenshot-2025-05-28-200419.png",
-      "https://i.ibb.co/1YD8rj7t/Screenshot-2025-05-28-200447.png",
-      "https://i.ibb.co/PZDjWvsS/Screenshot-2025-05-28-200503.png",
+      "https://i.ibb.co.com/Z6Jyj4TW/Screenshot-2025-05-28-200152.png",
+      "https://i.ibb.co.com/Xr2Z0tVk/Screenshot-2025-05-28-200219.png",
+      "https://i.ibb.co.com/FqdtDQSq/Screenshot-2025-05-28-200245.png",
+      "https://i.ibb.co.com/S4k2Q5BX/Screenshot-2025-05-28-200352.png",
+      "https://i.ibb.co.com/GQ57ZV7k/Screenshot-2025-05-28-200419.png",
+      "https://i.ibb.co.com/dJXhFZ0t/Screenshot-2025-05-28-200447.png",
     ],
   },
   {
@@ -36,13 +35,11 @@ const TeamProjects = [
     backend: "https://github.com/rahat-495/Book-Shop-Server",
     liveDemo: "https://book-shop-client-ten.vercel.app/",
     imageSrcs: [
-      "https://i.ibb.co/Lhs29hLg/Screenshot-2025-05-28-201104.png",
+      "https://i.ibb.co.com/xtPpHbTk/Screenshot-2025-05-28-201104.png",
       "https://i.ibb.co/xt7sMbhN/Screenshot-2025-05-28-201127.png",
-      "https://i.ibb.co/ccC2gv00/Screenshot-2025-05-28-201428.png",
-      "https://i.ibb.co/gHWdgf4/Screenshot-2025-05-28-201208.png",
-      "https://i.ibb.co/JTzdTCx/Screenshot-2025-05-28-201224.png",
-      "https://i.ibb.co/5h1w8KCd/Screenshot-2025-05-28-201614.png",
-      "https://i.ibb.co/JTzdTCx/Screenshot-2025-05-28-201224.png",
+      "https://i.ibb.co.com/zVL5YPw7/Screenshot-2025-05-28-201208.png",
+      "https://i.ibb.co.com/k2Z1FNDM/Screenshot-2025-05-28-201224.png",
+      "https://i.ibb.co.com/dw7Y1KqQ/Screenshot-2025-05-28-201614.png",
     ],
   },
 ];
@@ -54,7 +51,7 @@ const PersonalProjects = [
     liveDemo: "https://medi-mart-client-eight.vercel.app/",
     imageSrcs: [
       "https://i.ibb.co/prh1fZRf/Screenshot-2025-05-30-174456.png",
-      "https://i.ibb.co/Xx2sMhFb/Screenshot-2025-05-30-174621.png",
+      "https://i.ibb.co.com/23SKc6dK/Screenshot-2025-05-30-174621.png",
       "https://i.ibb.co/VWsDs7M5/Screenshot-2025-05-30-174640.png",
       "https://i.ibb.co/vvRgbSG3/Screenshot-2025-05-30-174655.png",
       "https://i.ibb.co/Tx5NY9Q2/Screenshot-2025-05-30-174718.png",
@@ -67,11 +64,11 @@ const PersonalProjects = [
     backend: "https://github.com/MahmudPreyom/bi-cycle-store-server",
     liveDemo: "https://bi-cycle-store-client.vercel.app/",
     imageSrcs: [
-      "https://i.ibb.co/dqvsN8c/Screenshot-2025-05-30-173833.png",
-      "https://i.ibb.co/5WcLzG2g/Screenshot-2025-05-30-174145.png",
-      "https://i.ibb.co/99536J1q/Screenshot-2025-05-30-174117.png",
+      "https://i.ibb.co.com/mgtvSh1/Screenshot-2025-05-30-173833.png",
+      "https://i.ibb.co.com/q3nmm5NP/Screenshot-2025-05-30-174117.png",
+      "https://i.ibb.co.com/WW4wSSD1/Screenshot-2025-05-30-174145.png",
       "https://i.ibb.co/LDwjCkd8/Screenshot-2025-05-30-174310.png",
-      "https://i.ibb.co/SwgdjWXj/Screenshot-2025-05-30-174336.png",
+      "https://i.ibb.co.com/vrTydmB/Screenshot-2025-05-30-174336.png",
     ],
   },
   {
@@ -86,7 +83,7 @@ const PersonalProjects = [
       "https://i.ibb.co/chWDJKfq/Screenshot-2025-05-31-002813.png",
       "https://i.ibb.co/RpRtRTk9/Screenshot-2025-05-31-002829.png",
       "https://i.ibb.co/5W4scnJj/Screenshot-2025-05-31-002843.png",
-      "https://i.ibb.co/tpm1Cv8h/Screenshot-2025-05-31-002741.png"
+      "https://i.ibb.co/tpm1Cv8h/Screenshot-2025-05-31-002741.png",
     ],
   },
   {
@@ -97,7 +94,7 @@ const PersonalProjects = [
     imageSrcs: [
       "https://i.ibb.co/9HxvHBSh/Screenshot-2025-05-31-002410.png",
       "https://i.ibb.co/DH4bfgRX/Screenshot-2025-05-31-002504.png",
-      "https://i.ibb.co/xt638Jn2/Screenshot-2025-05-31-002539.png",
+      // "https://i.ibb.co/xt638Jn2/Screenshot-2025-05-31-002539.png",
       "https://i.ibb.co/6GF0KRC/Screenshot-2025-05-31-002555.png",
       "https://i.ibb.co/Cp5nQB9S/Screenshot-2025-05-31-002434.png",
     ],
@@ -268,19 +265,10 @@ const Projects = () => {
           </TabsTrigger>
         </TabsList>
 
-        {/* <TabsList className="container mx-auto flex justify-center gap-3">
-          <TabsTrigger value="personal">{t("tabs.personal")}</TabsTrigger>
-          <TabsTrigger value="team">{t("tabs.team")}</TabsTrigger>
-          <TabsTrigger value="frontend">{t("tabs.frontend")}</TabsTrigger>
-        </TabsList> */}
-
         <TabsContent value="personal">
           {renderProjects(PersonalProjects)}
         </TabsContent>
         <TabsContent value="team">{renderProjects(TeamProjects)}</TabsContent>
-        {/* <TabsContent value="frontend">
-          {renderProjects(FrontendProjects)}
-        </TabsContent> */}
       </Tabs>
     </section>
   );

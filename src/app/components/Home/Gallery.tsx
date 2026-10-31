@@ -2,6 +2,7 @@
 "use client";
 
 import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
+// @ts-expect-error Keen Slider's stylesheet is a side-effect import without TypeScript declarations.
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
 import g1 from "../../../assets/gallery/IMG20200730180836-01.jpeg";
@@ -44,7 +45,7 @@ export default function Gallery() {
       renderMode: "custom",
       mode: "free-snap",
     },
-    [carousel]
+    [carousel],
   );
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -70,7 +71,7 @@ export default function Gallery() {
             duration: 1,
             ease: "power3.out",
             stagger: 0.2,
-          }
+          },
         );
       });
 
@@ -87,7 +88,7 @@ export default function Gallery() {
             duration: 0.8,
             ease: "power2.out",
             stagger: 0.15,
-          }
+          },
         );
       });
 

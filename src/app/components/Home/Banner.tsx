@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 import { Download, UserPlus } from "lucide-react";
-import profile from "../../../assets/Adobe Express - file (15).png";
+import profile from "../../../assets/p1.02.png";
 import middle from "../../../assets/middlepng.png";
 import { ThemeToggle } from "../shared/ThemeToggle";
 import { useTranslation } from "react-i18next";
@@ -104,9 +104,7 @@ const Banner = () => {
                 />
               </span>
             </h2>
-            <p className="left-col text-muted-foreground">
-              {t("description")}
-            </p>
+            <p className="left-col text-muted-foreground">{t("description")}</p>
 
             <div className="left-col flex gap-3 mt-6">
               <Link

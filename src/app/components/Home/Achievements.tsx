@@ -3,7 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Swiper, SwiperSlide } from "swiper/react";
+// @ts-expect-error Swiper CSS is loaded by the bundler and has no module declarations.
 import "swiper/css";
+// @ts-expect-error Swiper CSS is loaded by the bundler and has no module declarations.
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 import Image from "next/image";
