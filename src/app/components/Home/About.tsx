@@ -5,7 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Laptop, Code, Layers, MessageCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import about from "../../../assets/Remove background project.png";
+// import about from "../../../assets/Remove background project.png";
+import about from "../../../assets/IMG_20260321_135139.jpg (1).png";
 
 const About = () => {
   const { t } = useTranslation("about");
@@ -52,7 +53,9 @@ const About = () => {
         <div>
           <div className="mb-10">
             <h5 className="text-xl text-muted-foreground">{t("getToKnow")}</h5>
-            <h2 className="text-4xl font-bold text-foreground">{t("aboutMe")}</h2>
+            <h2 className="text-4xl font-bold text-foreground">
+              {t("aboutMe")}
+            </h2>
           </div>
 
           {/* Cards */}
