@@ -10,7 +10,6 @@ import { VscLiveShare } from "react-icons/vsc";
 import { TbListDetails } from "react-icons/tb";
 import { Users, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
-// @ts-expect-error Keen Slider provides CSS without TypeScript declarations.
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 

@@ -2,7 +2,6 @@
 "use client";
 
 import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
-// @ts-expect-error Keen Slider's stylesheet is a side-effect import without TypeScript declarations.
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
 import g1 from "../../../assets/gallery/IMG20200730180836-01.jpeg";

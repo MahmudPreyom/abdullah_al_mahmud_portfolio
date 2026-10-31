@@ -2,7 +2,6 @@
 // import { I18nextProvider } from "react-i18next";
 import Navbar from "./components/Home/Navbar";
 import { Providers } from "./components/shared/Providers";
-// @ts-expect-error CSS is processed by Next.js and has no TypeScript module declarations.
 import "./globals.css";
 // import i18n from "@/i18n";
 import I18nProviderWrapper from "./components/shared/I18nProviderWrapper";
